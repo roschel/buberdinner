@@ -26,10 +26,10 @@ namespace BuberDinner.Api.Controllers
 
             var response = new AutheticationResponse(
                 authResult.Id,
+                authResult.Email,
                 authResult.Token,
                 authResult.FirstName,
-                authResult.LastName,
-                authResult.Email);
+                authResult.LastName);
 
             return Ok(response);
         }

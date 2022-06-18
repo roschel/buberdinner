@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddSwaggerGen();
     builder.Services
         .AddApplication()
-        .AddInfra();
+        .AddInfra(builder.Configuration);
 }
 
 var app = builder.Build();
